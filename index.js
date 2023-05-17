@@ -4,6 +4,13 @@ function calculate() {
     var output = document.getElementById("output");
     var resultDiv = document.getElementById("result");
     var body = document.body;
+    input.addEventListener("keydown", function 
+    (event){
+        if (event.key === "Enter") {
+            event.preventDefault();
+            conveter();
+        }
+    });
 
     output.innerHTML = result.toFixed(2);
 
