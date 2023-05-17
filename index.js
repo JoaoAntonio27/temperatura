@@ -16,3 +16,9 @@ function calculate() {
 
     resultDiv.innerHTML = "Resultado:";
 }
+
+function checkKey(event) {
+    if (event.keyCode === 13) {
+        calculate();
+    }
+}
